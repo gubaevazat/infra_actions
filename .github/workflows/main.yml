@@ -3,15 +3,15 @@ name: CI
 on:
   push:
     branches: [ master ]
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
-      run: echo Hello, world!
-      
+      run: echo Hello, world! It is workflow!
+
     - name: Run a multi-line script
       run: |
         echo Add other actions to build
